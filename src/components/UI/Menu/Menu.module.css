@@ -7,13 +7,4 @@
     background-color: #514D52;
     top: 0;
     left: 0;
-    transition: transform 1s ease-in-out;
-    box-sizing: border-box;
-    transition: transform 0.3s ease-out;
-}
-
-@media (min-width: 500px) {
-    .SideDrawer {
-        display: none;
-    }
 }

@@ -11,7 +11,7 @@
     align-items: flex-start;
     flex-direction: column;
     position: fixed;
-    top: 28px;
-    left: 28px;
+    top: 2%;
+    left: 2%;
     cursor: pointer;
 }

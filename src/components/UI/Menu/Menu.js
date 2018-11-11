@@ -6,10 +6,6 @@ import classes from "./Menu.module.css";
 class Menu extends Component {
     state = {
         menuIsOpen: false,
-        newTripIsOpen: false,
-        pastTripIsOpen: false,
-        settingsIsOpen: false,
-        accountIsOpen: false
     }
 
     openMenuToggler = () => {
@@ -20,9 +16,9 @@ class Menu extends Component {
 
     render() {
         return (
-                <div className={classes.Menu}>
-                    <MenuIcon onClick={ this.openMenuToggler } />
-                </div>  
+            <div className={classes.Menu}>
+                <MenuIcon onClick={ this.openMenuToggler } />
+            </div>  
         )
     }
 }
