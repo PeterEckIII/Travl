@@ -8,3 +8,84 @@
     top: 0;
     left: 0;
 }
+
+.Opened {
+    animation-name: slideOut;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    width: 40%;
+}
+
+.Closed {
+    animation: slideIn 0.4s ease-in;
+    width: 8%;
+}
+
+@keyframes slideOut {
+    5% {
+        width: 8%;
+    }
+    10% {
+        width: 12%;
+    }
+    20% {
+        width: 16%;
+    }
+    30% {
+        width: 20%;
+    }
+    40% {
+        width: 24%;
+    }
+    50% {
+        width: 28%;
+    }
+    60% {
+        width: 32%;
+    }
+    70% {
+        width: 35%;
+    }
+    80% {
+        width: 38%;
+    }
+    90% {
+        width: 40%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes slideIn {
+    10% {
+        width: 40%;
+    }
+    20% {
+        width: 40%;
+    }
+    30% {
+        width: 38%;
+    }
+    40% {
+        width: 35%;
+    }
+    50% {
+        width: 32%;
+    }
+    60% {
+        width: 24%;
+    }
+    70% {
+        width: 20%;
+    }
+    80% {
+        width: 16%;
+    }
+    90% {
+        width: 12%;
+    }
+    100% {
+        width: 8%;
+    }
+}
