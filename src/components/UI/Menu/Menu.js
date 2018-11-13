@@ -23,6 +23,7 @@ class Menu extends Component {
             attachedClasses = [classes.Menu, classes.Closed];
         }
 
+        // TODO: Conditionally render the Menu choices depending on whether the Menu is open or closed
         return (
             <div className={ attachedClasses.join(" ") }>
                 <MenuIcon clicked={ this.openMenuToggler } />
