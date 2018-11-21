@@ -1,16 +1,23 @@
 import React, { Component } from "react";
 import MenuIcon from "./MenuIcon/MenuIcon";
 import classes from "./Menu.module.css";
+import MenuChoices from "../Menu/MenuChoices/MenuChoices";
 
 class Menu extends Component {
   state = {
-    menuIsOpen: false
+    menuIsOpen: false,
+    newTripIsOpen: false
   };
 
   openMenuToggler = () => {
-    console.log(this.state.menuIsOpen);
     this.setState({
       menuIsOpen: !this.state.menuIsOpen
+    });
+  };
+
+  newTripOpenToggler = () => {
+    this.setState({
+      newTripIsOpen: !this.state.newTripIsOpen
     });
   };
 
@@ -22,10 +29,17 @@ class Menu extends Component {
       attachedClasses = [classes.Menu, classes.Closed];
     }
 
+    let menuItems = null;
+
+    if (this.state.menuIsOpen) {
+      menuItems = <MenuChoices />;
+    }
+
     // TODO: Conditionally render the Menu choices depending on whether the Menu is open or closed
     return (
       <div className={attachedClasses.join(" ")}>
         <MenuIcon clicked={this.openMenuToggler} />
+        {menuItems}
       </div>
     );
   }
