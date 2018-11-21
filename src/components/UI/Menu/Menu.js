@@ -6,7 +6,10 @@ import MenuChoices from "../Menu/MenuChoices/MenuChoices";
 class Menu extends Component {
   state = {
     menuIsOpen: false,
-    newTripIsOpen: false
+    newTripIsOpen: false,
+    pastTripsisOpen: false,
+    accountIsOpen: false,
+    settingsIsOpen: false
   };
 
   openMenuToggler = () => {
