@@ -8,6 +8,7 @@ const MenuChoices = ( props ) => (
         <MenuChoice className={classes.MenuChoices}>Past Trips</MenuChoice>
         <MenuChoice className={classes.MenuChoices}>Settings</MenuChoice>
         <MenuChoice className={classes.MenuChoices}>Account</MenuChoice>
+        <MenuChoice className={classes.MenuChoices}>Upgrade</MenuChoice>
     </ul>
 )
 
