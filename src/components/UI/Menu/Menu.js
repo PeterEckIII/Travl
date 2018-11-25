@@ -26,17 +26,14 @@ class Menu extends Component {
 
     render() {
         let attachedClasses;
-        if (this.state.menuIsOpen) {
-            attachedClasses = [classes.Menu, classes.Opened];
-        } else if (!this.state.menuIsOpen) {
-            attachedClasses = [classes.Menu, classes.Closed];
-        }
+        this.state.menuIsOpen
+            ? (attachedClasses = [classes.Menu, classes.Opened])
+            : (attachedClasses = [classes.Menu, classes.Closed]);
 
-        let menuItems = null;
-
-        if (this.state.menuIsOpen) {
-            menuItems = <MenuChoices />;
-        }
+        let menuItems;
+        this.state.menuIsOpen
+            ? (menuItems = <MenuChoices />)
+            : (menuItems = null);
 
         return (
             <div className={attachedClasses.join(" ")}>
