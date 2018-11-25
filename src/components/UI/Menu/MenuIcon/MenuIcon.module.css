@@ -1,8 +1,9 @@
 .MenuIcon {
-    width: 40px;
+    width: 50px;
     height: 3px;
     background-color: white;
-    margin: 4px 0;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .MenuIconContainer {
